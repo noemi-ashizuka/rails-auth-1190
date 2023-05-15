@@ -1,0 +1,9 @@
+<h1>Pages#home</h1>
+
+<%#= current_user %> <!-- gives us the instance of the logged in user -->
+
+<% if user_signed_in? %>
+  <h2>Hello <%= current_user.first_name %>!</h2>
+<% else %>
+  <p>Please log in to see content</p>
+<% end %>
